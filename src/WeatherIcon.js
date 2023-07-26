@@ -3,33 +3,31 @@ import ReactAnimatedWeather from "react-animated-weather";
 
 export default function WeatherIcon(props) {
   const codeMapping = {
-    "01d": { icon: "CLEAR_DAY", color: "#FFE263" },
-    "01n": { icon: "CLEAR_NIGHT", color: "#FFE263" },
-    "02d": { icon: "PARTLY_CLOUDY_DAY", color: "#D4CD4E" },
-    "02n": { icon: "PARTLY_CLOUDY_NIGHT", color: "#A3A06A" },
-    "03d": { icon: "PARTLY_CLOUDY_DAY", color: "#A3A06A" },
-    "03n": { icon: "PARTLY_CLOUDY_DAY", color: "#D4CD4E" },
-    "04d": { icon: "CLOUDY", color: "#5B6085" },
-    "04n": { icon: "CLOUDY", color: "#5B6085" },
-    "09d": { icon: "RAIN", color: "#548CC4" },
-    "09n": { icon: "RAIN", color: "#548CC4" },
-    "010d": { icon: "RAIN", color: "#548CC4" },
-    "010n": { icon: "RAIN", color: "#548CC4" },
-    "011d": { icon: "RAIN", color: "#548CC4" },
-    "011n": { icon: "RAIN", color: "#548CC4" },
-    "013d": { icon: "SNOW", color: "lightblue" },
-    "013n": { icon: "SNOW", color: "lightblue" },
-    "050d": { icon: "FOG", color: "#858585" },
-    "050n": { icon: "FOG", color: "#858585" },
+    "01d": "CLEAR_DAY",
+    "01n": "CLEAR_NIGHT",
+    "02d": "PARTLY_CLOUDY_DAY",
+    "02n": "PARTLY_CLOUDY_NIGHT",
+    "03d": "PARTLY_CLOUDY_DAY",
+    "03n": "PARTLY_CLOUDY_NIGHT",
+    "04d": "CLOUDY",
+    "04n": "CLOUDY",
+    "09d": "RAIN",
+    "09n": "RAIN",
+    "10d": "RAIN",
+    "10n": "RAIN",
+    "11d": "RAIN",
+    "11n": "RAIN",
+    "13d": "SNOW",
+    "13n": "SNOW",
+    "50d": "FOG",
+    "50n": "FOG",
   };
-
-  const weatherInfo = codeMapping[props.code];
 
   return (
     <ReactAnimatedWeather
-      icon={weatherInfo ? weatherInfo.icon : "CLEAR_DAY"}
-      color={weatherInfo ? weatherInfo.color : "yellow"}
-      size={60}
+      icon={codeMapping[props.code]}
+      color="#1e1e1e"
+      size={props.size}
       animate={true}
     />
   );

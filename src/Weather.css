@@ -16,26 +16,25 @@
 }
 
 .Weather ul {
-  margin: 0;
+  margin: 10;
   padding: 0;
 }
 
 .Weather li {
   color: #407088;
   color-scheme: light;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 400;
   line-height: 19px;
   list-style: none;
 }
 
 .Weather .temperature {
-  font-weight: bold;
-  color-scheme: light;
   font-size: 48px;
   line-height: 64px;
   font-weight: 400;
   letter-spacing: normal;
+  color: #407088;
 }
 
 .Weather .units {
@@ -52,8 +51,8 @@
   align-items: center;
 }
 .btn-outline-primary {
-  background-color: #f9c7cf;
-  color: rgb(88, 146, 181);
+  background-color: rgb(88, 146, 181);
+  color: white;
   border: none;
 
   padding: 6px 22px;
@@ -61,7 +60,7 @@
   font-size: 16px;
 }
 .btn-outline-primary:hover {
-  background-color: rgb(88, 146, 181);
-  color: #f9c7cf;
+  background-color: #407088;
+  color: white;
   cursor: pointer;
 }
